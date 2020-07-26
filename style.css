@@ -12,16 +12,18 @@ body {
   overflow: hidden;
 }
 
-#container {
+.container {
   width: 75%;
-  height: 290px;
   -webkit-box-shadow: 0px 0px 15px #ccc;
           box-shadow: 0px 0px 15px #ccc;
-  border-radius: 10px;
-  margin: 0 auto;
-  background-color: #333333;
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,17 +34,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem;
+  border-radius: 2px;
+  margin: 5rem;
 }
 
-#container .title {
+.title {
   font-size: 1.3rem;
   color: #fff;
 }
 
-#container .generate-color {
+.generate-color {
   cursor: pointer;
   border: 4px solid #fff;
   background-color: transparent;
