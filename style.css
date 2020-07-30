@@ -24,6 +24,7 @@ body {
 }
 
 .color-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,5 +57,13 @@ body {
   font-size: 1.5rem;
   padding: 1rem 2rem;
   margin: 1rem;
+}
+
+.text-copy {
+  color: white;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
