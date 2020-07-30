@@ -14,6 +14,7 @@ body {
 }
 
 .color-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,4 +39,12 @@ body {
   font-size: 1.5rem;
   padding: 1rem 2rem;
   margin: 1rem;
+}
+
+.text-copy {
+  color: white;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  cursor: pointer;
 }
